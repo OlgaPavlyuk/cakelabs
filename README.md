@@ -1,3 +1,7 @@
+## Demo
+Test-task for **Cakelabs**
+The project will be [here](https://olgapavlyuk.github.io/cakelabs/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

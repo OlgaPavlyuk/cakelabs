@@ -1,0 +1,49 @@
+@import '../../shared/styles/variables';
+
+.page-event {
+  &__info {
+    display: flex;
+    align-items: center;
+
+    > * {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+    }
+  }
+
+  &__place {
+    svg {
+      fill: $accent;
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+
+    &:before {
+      content: '\20BD';
+      font-size: 1.5em;
+      font-weight: normal;
+      line-height: 1;
+      color: $accent;
+      margin-right: 0.25em;
+    }
+
+     &:after {
+      content: '.00';
+    }
+
+    &--free {
+      background-color: $accent;
+      border-radius: 4px;
+      color: #FFF;
+      padding: 0 .5em;
+
+      &:before,
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../shared/styles/variables';
+
+.home__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-toggler {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: color $transition-time/2 $transition-func;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &.desc {
+    svg {
+      transform: rotate(180deg) scale(1, 1);
+    }
+  }
+
+  svg {
+    margin-left: 0.5rem;
+    fill: currentColor;
+  }
+
+  .line:nth-child(1) {
+    transition-delay: ($transition-time/3);
+  }
+
+  .line:nth-child(2) {
+    transition-delay: (2 * $transition-time/3);
+  }
+
+  .line:nth-child(3) {
+     transition-delay: (3 * $transition-time/3);
+  }
+
+}

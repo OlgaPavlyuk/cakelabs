@@ -1,0 +1,50 @@
+@import '../../shared/styles/variables';
+
+.events {
+  list-style: none;
+  padding: 0;
+}
+
+.event {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.5rem 5rem 0.5rem 1rem;
+  border: 1px solid #F9F9F9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color $transition-time $transition-func;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    padding: 0 0.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 75%;
+    font-weight: bold;
+    background-color: $accent;
+    color: #fff;
+  }
+
+  &__price {
+    position: absolute;
+    display: block;
+    width: 5rem;
+    padding: 0.25em;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    text-align: center;
+  }
+}

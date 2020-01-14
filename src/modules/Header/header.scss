@@ -1,0 +1,26 @@
+@import '../../shared/styles/variables.scss';
+
+.header {
+  border-bottom: 1px solid #F9F9F9;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    display: block;
+    padding: 1rem 0;
+
+    color: #000;
+    text-transform: uppercase;
+    transition: color $transition-time $transition-func;
+    
+    &.active,
+    &:hover {
+      color: $accent;
+    }
+  }
+}

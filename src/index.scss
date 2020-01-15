@@ -89,3 +89,30 @@ button:focus {
     margin: 0 0.25rem;
   }
 }
+
+.favourites-toggler {
+  color: $accent;
+  height: 2rem;
+  transition: color $transition-time $transition-func;
+
+  .circle,
+  .star {
+    stroke: currentColor;
+    transition: fill $transition-time $transition-func,
+  }
+
+  &:hover {
+    .circle {
+      fill: rgba($accent, 0.2);
+    }
+    .star {
+      fill: #fff;
+    }
+  }
+
+  &.active {
+    .star {
+      fill: currentColor;
+    }
+  }
+}

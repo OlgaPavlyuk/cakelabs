@@ -27,7 +27,7 @@ const routes = [
     name: 'Фестивали'
   },
   {
-    filter: `favourite`,
+    filter: `favourites`,
     name: 'Избранное'
   },
 ];

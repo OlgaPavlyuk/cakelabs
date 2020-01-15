@@ -26,7 +26,7 @@ const Event = (props) => {
   if (props.error) return <Error error='Произошла ошибка' />;
   if (props.isLoading) return <div>Loading</div>
 
-  const { title, price, date, description, image, is_free, place, categories, body } = props.event;
+  const { title, price, date, description, is_free, place, categories, body } = props.event;
 
   const dateStr = new Date(date).toLocaleString("ru", {
     year: 'numeric',

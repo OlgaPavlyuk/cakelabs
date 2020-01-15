@@ -18,7 +18,7 @@ const events = (state = initialState, action) => {
       return {
         loading: false,
         error: null,
-        list: action.payload.events,
+        list: action.payload,
       };
     case FETCH_EVENTS_FAILURE:
       return {

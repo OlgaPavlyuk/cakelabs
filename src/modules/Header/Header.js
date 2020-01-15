@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import FilterLink from './FilterLink';
+import routes from '../../redux/routes';
 
 import './header.scss';
 
@@ -8,12 +9,7 @@ const Header = () => {
     <header className='header'>
       <div className='container'>
         <nav className='menu'>
-          <NavLink activeClassName="active" exact to={'/events'} className='menu__link'>Все события</NavLink>
-          <NavLink activeClassName="active" exact to={'/events:movie'} className='menu__link'>Кино</NavLink>
-          <NavLink activeClassName="active" exact to={'/events:theatre'} className='menu__link'>Театр</NavLink>
-          <NavLink activeClassName="active" exact to={'/events:science'} className='menu__link'>Наука</NavLink>
-          <NavLink activeClassName="active" exact to={'/events:music'} className='menu__link'>Музыка</NavLink>
-          <NavLink activeClassName="active" exact to={'/events:painting'} className='menu__link'>Живопись</NavLink>
+          {routes.map((route) => <FilterLink key={route.filter} filter={route.filter}>{route.name}</FilterLink>)}
         </nav>
       </div>
     </header>

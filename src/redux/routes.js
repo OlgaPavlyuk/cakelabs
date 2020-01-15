@@ -7,27 +7,27 @@ const routes = [
     name: 'Все события'
   },
   {
-    filter: `${baseEvents}/movie`,
+    filter: `movie`,
     name: 'Кино'
   },
   {
-    filter: `${baseEvents}/theatre`,
+    filter: `theatre`,
     name: 'Театр'
   },
   {
-    filter: `${baseEvents}/concert`,
+    filter: `concert`,
     name: 'Концерты'
   },
   {
-    filter: `${baseEvents}/exhibition`,
+    filter: `exhibition`,
     name: 'Выставки'
   },
   {
-    filter: `${baseEvents}/festival`,
+    filter: `festival`,
     name: 'Фестивали'
   },
   {
-    filter: `${baseEvents}/favourite`,
+    filter: `favourite`,
     name: 'Избранное'
   },
 ];

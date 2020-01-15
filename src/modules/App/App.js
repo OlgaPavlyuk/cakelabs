@@ -25,7 +25,7 @@ const App = (props) => {
           <Switch>
             <Route exact path="/" component={Events} />
             <Route exact path="/events" component={Events} />
-            <Route exact path="/events/:filter" component={Events} />
+            <Route exact path="/:filter" component={Events} />
             <Route exact path="/events/:event" component={Event} />
             {/* <Route component={NoMatch} /> */}
           </Switch>

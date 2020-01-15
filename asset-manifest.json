@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cakelabs/static/css/main.70e4656a.chunk.css",
-    "main.js": "/cakelabs/static/js/main.345ee2c1.chunk.js",
-    "main.js.map": "/cakelabs/static/js/main.345ee2c1.chunk.js.map",
+    "main.js": "/cakelabs/static/js/main.a4640e66.chunk.js",
+    "main.js.map": "/cakelabs/static/js/main.a4640e66.chunk.js.map",
     "runtime-main.js": "/cakelabs/static/js/runtime-main.125f60a3.js",
     "runtime-main.js.map": "/cakelabs/static/js/runtime-main.125f60a3.js.map",
     "static/css/2.764ccc25.chunk.css": "/cakelabs/static/css/2.764ccc25.chunk.css",
     "static/js/2.cb695a45.chunk.js": "/cakelabs/static/js/2.cb695a45.chunk.js",
     "static/js/2.cb695a45.chunk.js.map": "/cakelabs/static/js/2.cb695a45.chunk.js.map",
     "index.html": "/cakelabs/index.html",
-    "precache-manifest.31c19ee85aa39a9f456404bed4cab9a6.js": "/cakelabs/precache-manifest.31c19ee85aa39a9f456404bed4cab9a6.js",
+    "precache-manifest.347b4f635e3625399310f73aaf49e859.js": "/cakelabs/precache-manifest.347b4f635e3625399310f73aaf49e859.js",
     "service-worker.js": "/cakelabs/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/cakelabs/static/css/2.764ccc25.chunk.css.map",
     "static/css/main.70e4656a.chunk.css.map": "/cakelabs/static/css/main.70e4656a.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.cb695a45.chunk.js",
     "static/css/main.70e4656a.chunk.css",
-    "static/js/main.345ee2c1.chunk.js"
+    "static/js/main.a4640e66.chunk.js"
   ]
 }

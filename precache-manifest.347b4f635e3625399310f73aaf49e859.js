@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "592a9cfafad5c7132cf22bad2bc0cb9f",
+    "revision": "e8315d190baf39c0bfae08ab175ee900",
     "url": "/cakelabs/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cakelabs/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "9011a6b8078cbd548fd7",
+    "revision": "b7bc3a81d64e3239290e",
     "url": "/cakelabs/static/css/main.70e4656a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cakelabs/static/js/2.cb695a45.chunk.js.LICENSE"
   },
   {
-    "revision": "9011a6b8078cbd548fd7",
-    "url": "/cakelabs/static/js/main.345ee2c1.chunk.js"
+    "revision": "b7bc3a81d64e3239290e",
+    "url": "/cakelabs/static/js/main.a4640e66.chunk.js"
   },
   {
     "revision": "925402dc05636334fc2b",

@@ -25,7 +25,7 @@ const EventsList = (props) => {
   const { title, is_free, categories, price, slug, isFavourite } = props;
 
   return (
-    <li className="event">
+    <li className="event" >
       <div className='event__actions'>
         <Link to={`/events/${slug}`} className="event__link">{title}</Link>
         <ButtonStar onClick={handleFavouriteClick} isFavourite={isFavourite} />

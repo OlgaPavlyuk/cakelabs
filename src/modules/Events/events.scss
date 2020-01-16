@@ -1,15 +1,30 @@
 @import '../../shared/styles/variables';
+@import '../../shared/styles/helpers';
 
-.home__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.events {
+  &__header {
+    @include media-breakpoint-up(sm) { 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin: 0.5em 0 0.25em;
+
+    @include media-breakpoint-up(sm) { 
+      margin: 0.67em 0;
+    }
+  }
 }
+
 
 .order-toggler {
   font-weight: bold;
   display: flex;
   align-items: center;
+  padding: 1rem;
   transition: color $transition-time/2 $transition-func;
 
   &:hover {
@@ -23,20 +38,12 @@
   }
 
   svg {
-    margin-left: 0.5rem;
     fill: currentColor;
   }
 
-  .line:nth-child(1) {
-    transition-delay: ($transition-time/3);
+  @for $i from 1 through 3 {
+    .line:nth-child(#{$i}) {
+      transition-delay: #{(3 - $i) * ($transition-time/ 3) };
+    }
   }
-
-  .line:nth-child(2) {
-    transition-delay: (2 * $transition-time/3);
-  }
-
-  .line:nth-child(3) {
-     transition-delay: (3 * $transition-time/3);
-  }
-
 }

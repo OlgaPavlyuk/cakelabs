@@ -1,17 +1,6 @@
 export const sortEvents = (list, order) => {
   const sortOrder = order === 'asc' ? 1 : -1;
 
-  // const compare = (a, b) => {
-  //   if (+a.price > +b.price) {
-  //     return 1;
-  //   }
-  //   if (+a.price < +b.price) {
-  //     return -1;
-  //   }
-  //   // a должно быть равным b
-  //   return 0;
-  // }
-
   return list.sort((a, b) => {
     if (+a.price > +b.price) return 1 * sortOrder;
     if (+a.price < +b.price) return -1 * sortOrder;

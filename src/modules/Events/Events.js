@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import EventsList from '../EventsList/EventsList';
 import Error from '../../shared/components/Error';
+import Loader from '../../shared/components/Loader';
 
 import { toggleEventsOrder } from '../App/eventsActions';
 import { sortEvents, getFiltredEvents, getFavouritesEvents } from '../../services/selectors';
@@ -39,22 +40,25 @@ const mapDispatchToProps = (dispatch) => ({
 const Events = (props) => {
 
   if (props.isError) return <Error error='Произошла ошибка' />;
-  if (props.isLoading) return <div>Loading...</div>
+  if (props.isLoading) return <Loader />;
 
   const { events, order, toggleEventsOrder, filter } = props;
+
   const title = filter ? routes.find(route => route.filter === filter).name : 'События в городе';
-  const btnTitle = order === 'asc' ? 'По возрастанию' : 'По убыванию';
+  if (events.length < 1) return <h2>Нет событий в разделе: "{title}"</h2>
+
+  const btnTitle = order === 'asc' ? 'по возрастанию' : 'по убыванию';
   const eventsSortedList = sortEvents(events, order);
 
   return (
     <>
-      <div className='home__header'>
-        <h1>{title}</h1>
+      <div className='events__header'>
+        <h1 className='events__title'>{title}</h1>
         <button
           onClick={() => toggleEventsOrder()}
           className={`order-toggler ${order}`}
+          title={btnTitle}
         >
-          {btnTitle}
           <SortIcon width='1.5rem' height='1.5rem' />
         </button>
       </div>

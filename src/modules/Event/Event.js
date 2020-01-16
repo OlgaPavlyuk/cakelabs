@@ -7,9 +7,12 @@ import cn from 'classnames';
 
 import ButtonStar from '../../shared/components/ButtonStar';
 import Error from '../../shared/components/Error';
+import Loader from '../../shared/components/Loader';
 
 import TagsLine from '../../shared/components/TagsLine';
 import LocationIcon from '../../shared/icons/Location';
+import RubleIcon from '../../shared/icons/Ruble';
+import CalendarIcon from '../../shared/icons/Calendar';
 
 import './event.scss';
 
@@ -34,7 +37,7 @@ const mapStateToProps = ({ events }, ownProps) => {
 const Event = (props) => {
 
   if (props.error) return <Error error='Произошла ошибка' />;
-  if (props.isLoading) return <div>Loading</div>
+  if (props.isLoading) return <Loader />;
 
   const { id, title, price, date, description, is_free, place, categories, body } = props.event;
   const isFavourite = props.favourites.find(f => id === f) || false;
@@ -66,14 +69,17 @@ const Event = (props) => {
       <h2 className='page-event__description'>{description}</h2>
 
       <div className='page-event__info'>
-        <time className='page-event__date' dateTime={date}>{dateStr}</time>
+        <time className='page-event__date' dateTime={date}>
+          <CalendarIcon height='1.5rem' width='1.5rem'/>
+          {dateStr}</time>
         {place &&
           <div className='page-event__place'>
-            <LocationIcon height='2rem' width='2rem' />
+            <LocationIcon height='1.5rem' width='1.5rem' />
               {place}
           </div>
         }
         <div className={priceClasses}>
+          <RubleIcon height='1.75rem' width='1.5rem' />
           {price || (is_free && 'Бесплатно')}
         </div>
       </div>

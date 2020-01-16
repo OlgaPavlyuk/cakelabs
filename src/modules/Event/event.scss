@@ -1,44 +1,43 @@
+@import '../../shared/styles/helpers';
 @import '../../shared/styles/variables';
 
 .page-event {
   &__info {
-    display: flex;
-    align-items: center;
+
+    @include media-breakpoint-up(sm) { 
+      display: flex;
+      align-items: center;
+    }
 
     > * {
       display: flex;
       align-items: center;
-      margin-right: 1rem;
-    }
-  }
+      margin: 0.5rem 0;
 
-  &__place {
+      @include media-breakpoint-up(sm) {
+        margin: 0.5rem 1rem 0.5rem 0;
+      }
+    }
+
     svg {
       fill: $accent;
+      margin-right: 0.25rem;
     }
   }
 
   &__price {
     font-weight: bold;
 
-    &:before {
-      content: '\20BD';
-      font-size: 1.5em;
-      font-weight: normal;
-      line-height: 1;
-      color: $accent;
-      margin-right: 0.25em;
-    }
-
-     &:after {
-      content: '.00';
-    }
-
     &--free {
       background-color: $accent;
       border-radius: 4px;
       color: #FFF;
       padding: 0 .5em;
+      display: inline-block;
+
+      svg {
+        display: none;
+      }
 
       &:before,
       &:after {

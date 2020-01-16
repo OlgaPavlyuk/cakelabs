@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import Header from '../Header/Header';
 import Events from '../Events/Events';
 import Event from '../Event/Event';
+import E404 from '../../shared/components/E404';
 
 import fetchEvents from '../../services/fetchEvents';
 
@@ -27,7 +28,7 @@ const App = (props) => {
             <Route exact path="/events" component={Events} />
             <Route exact path="/:filter" component={Events} />
             <Route exact path="/events/:event" component={Event} />
-            {/* <Route component={<div>404</div>} /> */}
+            <Route component={E404} />
           </Switch>
         </div>
       </main>

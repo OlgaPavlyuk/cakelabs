@@ -1,4 +1,4 @@
-export const basename = '/cakelabs';
+export const basename = '/';
 
 const baseEvents = 'events';
 const routes = [

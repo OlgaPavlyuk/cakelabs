@@ -1,9 +1,9 @@
 import React from 'react';
 
-const e404 = () => {
+const E404 = () => {
   return (
-    <div></div>
+    <h2>Not Found</h2>
   );
 }
 
-export default e404;
+export default E404;

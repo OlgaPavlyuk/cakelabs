@@ -1,6 +1,8 @@
 ## Demo
-Test-task for **Cakelabs**
-The project will be [here](https://olgapavlyuk.github.io/cakelabs/).
+A test for **Cakelabs**
+The demo is [here](https://spb-events.herokuapp.com/).
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
